@@ -11,16 +11,15 @@ public class InstantCreditCheck {
         System.out.println("Enter your credit score: ");
         int score = scanner.nextInt();
         //check if the user is qualified
-        boolean qualified = isUserQualified(score,salary);
+        isUserQualified(score,salary);
     }
-public static boolean isUserQualified(int creditScore, double salary){
+public static void isUserQualified(int creditScore, double salary){
         double requiredSalary = 25000;
         int requiredCreditScore = 700;
         if (creditScore >= requiredCreditScore && salary >= requiredSalary){
-           return true;
+            System.out.println("Congrats! You've Been Approved!");
         }else {
             System.out.println("Sorry, You've bee declined.");
-            return false;
         }
     }
 
