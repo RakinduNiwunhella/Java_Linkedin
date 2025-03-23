@@ -20,6 +20,8 @@ public static void isUserQualified(int creditScore, double salary){
             System.out.println("Congrats! You've Been Approved!");
         }else {
             System.out.println("Sorry, You've bee declined.");
+            System.out.println("You need to increase your credit score by : " + (requiredCreditScore - creditScore));
+
         }
     }
 
